@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Mar, 2020 1:12:40 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.nagarro.model.Flight" table="FLIGHT">
+        <id name="id" type="int" access="field">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="flightNum" type="java.lang.String">
+            <column name="FLIGHTNUM" />
+        </property>
+        <property name="departLoc" type="java.lang.String">
+            <column name="DEPARTLOC" />
+        </property>
+        <property name="arrivalLoc" type="java.lang.String">
+            <column name="ARRIVALLOC" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <property name="fare" type="int">
+            <column name="FARE" />
+        </property>
+        <property name="duration" type="java.lang.String">
+            <column name="DURATION" />
+        </property>
+        <property name="fclass" type="java.lang.String">
+            <column name="FCLASS" />
+        </property>
+        <property name="avail" type="java.lang.String">
+            <column name="AVAIL" />
+        </property>
+        <property name="time" type="java.lang.String">
+            <column name="TIME" />
+        </property>
+        <property name="filename" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+    </class>
+</hibernate-mapping>
